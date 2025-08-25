@@ -1,1 +1,1 @@
-# leaderboard - using mern
+# leaderboard - Mern stack
