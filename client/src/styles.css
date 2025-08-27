@@ -69,7 +69,7 @@ body{
   margin-top:16px;
 }
 .row{
-  display:grid; grid-template-columns: 56px 1fr 120px; gap:12px; align-items:center;
+  display:grid; grid-template-columns: 56px 1fr 120px 140px; gap:12px; align-items:center;
   padding:12px; border-radius:12px; border:1px solid rgba(255,255,255,.06);
   background: rgba(255,255,255,.02);
 }
@@ -83,6 +83,8 @@ body{
 .rank.bronze{ background: linear-gradient(135deg, #cd7f32, #f59e0b); color:#1f2937 }
 .name{ font-weight:600 }
 .score{ text-align:right; font-weight:800; color: white }
+/* Ensure the score input uses the full cell width when editing */
+.row .score .input{ width: 100%; }
 
 /* Subtle hover effect on name */
 .row .name:not(:has(input)):hover{
@@ -94,7 +96,7 @@ body{
 .footer{ color: var(--muted); font-size:14px; margin-top: 24px; text-align:center }
 
 @media (max-width:560px){
-  .row{ grid-template-columns: 44px 1fr 90px }
+  .row{ grid-template-columns: 44px 1fr 90px 120px }
 }
 
 .toast{

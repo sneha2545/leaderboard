@@ -1,32 +1,18 @@
-# General
+## OS / Editor
 .DS_Store
 Thumbs.db
-*.log
-*.tmp
-.env
+.vscode/
+.idea/
 
-# Node
+## Env files
+.env
+server/.env
+
+## Dependencies / builds
 node_modules/
 **/node_modules/
 dist/
 **/dist/
 build/
-
-# Client build
 client/dist/
-
-# Server
-server/.env
 server/dist/
-
-# Editor/OS
-.vscode/
-.idea/
-# Dependencies
-node_modules/
-
-# Env
-server/.env
-
-# Build
-client/dist/

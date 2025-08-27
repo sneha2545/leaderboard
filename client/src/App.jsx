@@ -286,8 +286,8 @@ export default function App() {
             {displayedScores.length === 0 ? (
               <p className="subtitle">No matches. Try clearing the filter.</p>
             ) : null}
-            {displayedScores.map((s, i) => (
-              <div className="row" key={s._id ?? i} style={{gridTemplateColumns:'56px 1fr 160px 80px'}}>
+              {displayedScores.map((s, i) => (
+                <div className="row" key={s._id ?? i}>
                 <RankBadge rank={i + 1} />
                 <div className="name">
                   {editingId===s._id ? (
